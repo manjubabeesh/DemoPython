@@ -1,0 +1,12 @@
+.banner{
+background-color:aqua;
+width:150%;
+height:200px;
+margin-bottom:50px;
+}
+.banner-tittle{
+top:5%;
+left:50%;
+position:fixed;
+transform:transform;
+}

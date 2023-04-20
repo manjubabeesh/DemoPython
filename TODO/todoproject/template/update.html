@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="Shadowm card">
+  <div class="card-tittle">
+    <div class="card-text">
+      <h3>Tasks to be Updated</h3>
+    </div>
+    <div class="card-body">
+
+      <form method="POST">
+  {% csrf_token %}
+  {{form.as_p}}
+  <button type="submit">confirm</button>
+
+</form>
+
+    </div>
+  </div>
+</div>
+
+{% endblock  %}

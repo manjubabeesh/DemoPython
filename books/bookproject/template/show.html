@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+           <img src="{{dict2.img.url}}"  height="250" width="250" >
+        </div>
+
+<div class="col-md-6"  >
+  <h2>{{dict2.name}}</h2><br>
+   <h4>{{dict2.price}}</h4><br>
+    <h4>{{dict2.year}}</h4><br>
+
+<a class="btn btn-warning" href="{% url 'bookapp:update' dict2.id %}">update</a>
+<a class="btn btn-danger" href="{% url 'bookapp:delete' dict2.id %}">delete</a>
+
+</div>
+
+
+
+    </div>
+</div>
+{% endblock %}
